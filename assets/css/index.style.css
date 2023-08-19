@@ -233,7 +233,10 @@ body {
     height: 17px;
     border-radius: 4px;
     border: 1px solid #D9D9D9;
-    background: #ECECEC;
+  }
+
+  #check:checked{
+    background-color: #C70202;
   }
 
   .inp-label {

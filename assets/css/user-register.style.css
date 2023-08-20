@@ -20,7 +20,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -96,8 +96,7 @@ body {
     min-width: 169.345px;
     padding: 12px 61.65px 12px 61.69px;
     border:none;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-radius: 12px;
     color: #3E3F5E;
     text-align: center;
     font-family: Rajdhani;

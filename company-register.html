@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company > Register | AGI </title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/73a3d3252f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/company-register.style.css">
+
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+   
+<div class="row">
+    <div class="col-lg-4">
+        <div class="left-col">
+            <div class="left-col-content">
+                <p id="first">JOIN OUR MARKETPLACE</p>
+                <p id="second">COMMUNITY</p>
+                <p id="third">
+                The next generation social network & community! Connect
+                with businesses and contribute to question pools to get 
+                valuable connect points.
+                </p>
+                <div id="buttons">
+                    <button id="login">Login</button><button id="register">Register</button>
+                </div>
+                <div class="reg-type mt-4">
+                    <span class="reg-text me-3">I am registering as: </span>
+                    <span class="reg-text me-3"><input  class="form-check-input me-2 user-reg" id="check" type="checkbox"><label class=" me-3" for="" id="user-reg"> User</label></span>
+                    <span class="reg-text "><input checked disabled class="form-check-input me-2 company-reg" id="check" type="checkbox"><label class="" for="" id="company-reg"> Comany</label></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="right-col container">
+            <div class="right-col-content">
+                <div class="logo-wrapper ">
+                    <div id="logo"></div>
+                </div>
+                <div class="form-wrapper mt-4">
+                    <form action="#">
+                        <div class="row">
+                            <!--form col-1-->
+                            <div class="col-lg-6 form-col-wrapper">
+                                <div class="input-wrapper">
+                                    <div id="regform-left-header" class="text-center">Basic Information</div>
+                                </div>
+                                    
+                                <div class="input-field-wrapper">
+                                    <label class="left-inp-label mt-1 " for="Company Name">Company Name</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field" type="text" placeholder="Nullstead Inc." name="username" required>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field-wrapper">
+                                    <label class="left-inp-label mt-1" for="">Year of Establishment</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field" type="number" min="1900" max="2023" step="1" value="2001" name="email" required>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field-wrapper">
+                                    <label class="left-inp-label mt-1" for="">Number of Employees</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field" type="text" placeholder="50" name="" required>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field-wrapper">
+                                    <label class="left-inp-label mt-1" for="">Actual Address</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field " type="text" required  placeholder="197 - West Hills, Accra">
+                                        <!-- <div class="input-group-addon">
+                                            <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                
+                                <div class="input-field-wrapper">
+                                    <label class="left-inp-label mt-1" for="">Description of Products and Services</label>
+                                    <div class="input-wrapper">
+                                        <textarea class="input-field" name="" id="" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!--form col-2-->
+                            <div class="col-lg-6 form-col-wrapper">
+                                <div class="input-wrapper">
+                                    <div id="regform-right-header" class="text-center">Contact Information</div>
+                                </div>
+
+                                <div class="input-field-wrapper">
+                                    <label class="right-inp-label mt-1 " for="">Company Code</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field" type="text" placeholder="QHTY237468" name="username" required>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field-wrapper">
+                                    <label class="right-inp-label mt-1" for="">Sector</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field" type="text" placeholder="Technology" name="email" required>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field-wrapper">
+                                    <label class="right-inp-label mt-1" for="">Location</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field" type="text" placeholder="Keta - Sand City" name="phone" required>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field-wrapper">
+                                    <label class="right-inp-label mt-1" for="">Company Website</label>
+                                    <div class="input-wrapper">
+                                        <input class="input-field " type="text" placeholder="nullstead.com" name="email" required >
+                                        <!-- <div class="input-group-addon">
+                                            <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+
+                                <div class="input-field-wrapper">
+                                    <label class="right-inp-label mt-1" for=""><span style="color: #C70202;">Click here to upload your logo</span></label>
+                                    <div class="input-wrapper">
+                                        <input class="form-control form-control-lg input-field " type="file"  name="" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-wrapper ">
+                                    <input type="submit" id="submit-btn" value="Register">
+                                </div>
+
+                                
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/index.script.js"></script>
+<script src="./assets/js/preloader.js"></script>
+
+<script>
+    $("#login").click(function (e) { 
+        e.preventDefault();
+        location.href = "index.html";
+    });
+
+    $(".user-reg").click(function (e) { 
+        if($(this).is(":checked")){
+            location.href = "user-register.html";
+            $(".company-reg").attr('checked',false);
+        }
+    });
+</script>
+
+</body>
+
+</html>

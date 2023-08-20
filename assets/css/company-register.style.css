@@ -37,7 +37,8 @@ body {
 /*two main desktop columns*/
 .left-col {
     position: relative;
-    
+    padding-left: 18px;
+    margin-top: 83.5%;
 }
 
 .left-col-content {
@@ -45,10 +46,8 @@ body {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 515px;
+    width: 100%;
     height: fit-content;
-    top: 470px;
-    left: 148px;
     gap: 17px;
     /* border: 1px solid red; */
 }
@@ -92,7 +91,7 @@ body {
     border: 1px solid #FFF;
 }
 
-.left-col-content div#buttons button#login {
+.left-col-content div#buttons button#register {
     min-width: 169.345px;
     padding: 12px 61.65px 12px 61.69px;
     border:none;
@@ -107,7 +106,7 @@ body {
     line-height: 30px; /* 150% */
 }
 
-.left-col-content div#buttons button#register {
+.left-col-content div#buttons button#login {
     min-width: 169.345px;
     padding: 12px 51.6px 12px 51.74px;
     border: none;
@@ -126,27 +125,27 @@ body {
 
 
 .right-col {
-    position: relative;
-    
+    margin-top: 30px;    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .right-col-content {
     /* border: 1px solid red; */
-    position: absolute;
-    width: 619px;
-    height: 686px;
-    top: 126;
-    left: 135;
+    width: 100%;
+    height: fit-content;
     border-radius: 10px;
     background: #FFF;
+    
 }
 
 .logo-wrapper {
     /* border: 1px solid black; */
-    height: 40%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 18px;
 }
 
 .logo-wrapper div#logo {
@@ -177,11 +176,16 @@ body {
     text-align: center;
   }
   
+  .input-field-wrapper {
+    margin-bottom: 35px;
+  }
+
   .input-field {
     width: 100%;
     padding: 30px 20px 20px 20px;
-    outline: none;
-    border: none;
+    border-radius: 8px;
+    border: 0.4px solid var(--text-grey, #787878);
+    background: var(--my-grey, #EEE);
   }
   
   .input-field:focus {
@@ -198,6 +202,36 @@ body {
     opacity: 0.9;
     border-radius: 8px;
     color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.5%; /* 21.68px */
+  }
+
+  #regform-left-header{
+    background-color:#C70202;
+    padding: 20px 0px 20px 0px;
+    border: none;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.5%; /* 21.68px */
+  }
+
+  #regform-right-header{
+    background: var(--my-grey, #EEE);
+    padding: 20px 0px 20px 0px;
+    border: none;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 3px;
+    color: var(--text-grey, #787878);
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -239,16 +273,50 @@ body {
     background-color: #C70202;
   }
 
-  .inp-label {
+  .form-col-wrapper {
+    position: relative;
+  }
+
+  .left-inp-label {
     position: absolute;
-    left: 135px;
+    left: 32px;
     color: var(--black, #2F2F2F);
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 135.5%; /* 16.26px */
+  } 
+
+  .right-inp-label {
+    position: absolute;
+    left: 32px;
+    color: var(--black, #2F2F2F);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
     line-height: 135.5%; /* 16.26px */
   } 
 
 
- 
+  /*Registration types*/
+  .reg-type {
+    display: flex;
+    width: 100%;
+    padding: 18px 70px 18px 70px;
+    align-items: center;
+    gap: -1.005px;
+    border-radius: 10px;
+    background: #FFF;
+  
+  }
+
+  .reg-text {
+    color: var(--black, #2F2F2F);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.5%; /* 21.68px */
+  }

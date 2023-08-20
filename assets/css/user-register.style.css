@@ -17,17 +17,17 @@
 }
 
 
-html, body {
+  * {
     margin: 0;
     padding: 0;
-    height: 100vh;
     box-sizing: border-box;
-}
+  }
 
 /*bg image*/
 body {
     background-image: url("../img/bg.png");
     height: 100%;
+    overflow-x: hidden !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

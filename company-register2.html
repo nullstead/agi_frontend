@@ -40,7 +40,7 @@
     </div>
 
     <div class="col-lg-8">
-        <div class="right-col container">
+        <div class="right-col container " style="margin-top: 9%;">
             <div class="right-col-content">
                 <div class="logo-wrapper ">
                     <div id="logo"></div>
@@ -51,44 +51,37 @@
                             <!--form col-1-->
                             <div class="col-lg-6 form-col-wrapper">
                                 <div class="input-wrapper">
-                                    <div id="regform-left-header" class="text-center">Basic Information</div>
+                                    <div id="regform-left-header" class="text-center" style="background-color: rgba(57, 180, 0, 0.50);" >Basic Information</div>
                                 </div>
                                     
                                 <div class="input-field-wrapper">
-                                    <label class="left-inp-label mt-1 " for="Company Name">Company Name</label>
+                                    <label class="left-inp-label mt-1 " for="">Name of Individual</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field" type="text" placeholder="Nullstead Inc." name="username" required>
+                                        <input class="input-field" type="text" placeholder="John Doe" name="" required>
                                     </div>
                                 </div>
         
                                 <div class="input-field-wrapper">
-                                    <label class="left-inp-label mt-1" for="">Year of Establishment</label>
+                                    <label class="left-inp-label mt-1" for="">Phone</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field" type="number" min="1900" max="2023" step="1" value="2001" name="email" required>
+                                        <input class="input-field" type="tel" name="" required placeholder="0548183192">
                                     </div>
                                 </div>
         
                                 <div class="input-field-wrapper">
-                                    <label class="left-inp-label mt-1" for="">Number of Employees</label>
+                                    <label class="left-inp-label mt-1" for="">Email</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field" type="text" placeholder="50" name="" required>
+                                        <input class="input-field" type="email" placeholder="john@doe.com" name="" required>
                                     </div>
                                 </div>
         
                                 <div class="input-field-wrapper">
-                                    <label class="left-inp-label mt-1" for="">Actual Address</label>
+                                    <label class="left-inp-label mt-1" for="">Alternate Email</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field " type="text" required  placeholder="197 - West Hills, Accra">
+                                        <input class="input-field " type="email" placeholder="doe@john.com">
                                         <!-- <div class="input-group-addon">
                                             <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                                         </div> -->
-                                    </div>
-                                </div>
-                                
-                                <div class="input-field-wrapper">
-                                    <label class="left-inp-label mt-1" for="">Description of Products and Services</label>
-                                    <div class="input-wrapper">
-                                        <textarea class="input-field" name="" id="" cols="30" rows="5"></textarea>
                                     </div>
                                 </div>
                                 
@@ -97,54 +90,36 @@
                             <!--form col-2-->
                             <div class="col-lg-6 form-col-wrapper">
                                 <div class="input-wrapper">
-                                    <div id="regform-right-header" class="text-center">Contact Information</div>
+                                    <div id="regform-right-header" class="text-center" style="background-color: #C70202; color: #fff;">Contact Information</div>
                                 </div>
 
                                 <div class="input-field-wrapper">
-                                    <label class="right-inp-label mt-1 " for="">Company Code</label>
+                                    <label class="right-inp-label mt-1 " for="">Designation</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field" type="text" placeholder="QHTY237468" name="username" required>
+                                        <input class="input-field" type="text" placeholder="Chief Security Analyst" name="" required>
                                     </div>
                                 </div>
         
                                 <div class="input-field-wrapper">
-                                    <label class="right-inp-label mt-1" for="">Sector</label>
+                                    <label class="right-inp-label mt-1" for="">Phone</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field" type="text" placeholder="Technology" name="email" required>
+                                        <input class="input-field" type="tel" placeholder="0548183192" name="" required>
                                     </div>
                                 </div>
         
                                 <div class="input-field-wrapper">
-                                    <label class="right-inp-label mt-1" for="">Location</label>
+                                    <label class="right-inp-label mt-1" for="">WhatsApp Number</label>
                                     <div class="input-wrapper">
-                                        <input class="input-field" type="text" placeholder="Keta - Sand City" name="phone" required>
+                                        <input class="input-field" type="tel" placeholder="0502634502" name="" required>
                                     </div>
-                                </div>
-        
-                                <div class="input-field-wrapper">
-                                    <label class="right-inp-label mt-1" for="">Company Website</label>
-                                    <div class="input-wrapper">
-                                        <input class="input-field " type="text" placeholder="nullstead.com" name="email" required >
-                                        <!-- <div class="input-group-addon">
-                                            <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
-                                        </div> -->
-                                    </div>
-                                </div>
-
-                                <div class="input-field-wrapper">
-                                    <label class="right-inp-label mt-1" for=""><span style="color: #C70202;">Click here to upload your logo</span></label>
-                                    <div class="input-wrapper">
-                                        <input class="form-control form-control-lg input-field " type="file"  name="" required>
-                                    </div>
-                                </div>
-                                
-                                <div class="input-wrapper ">
-                                    <input type="submit" id="submit-btn" value="NEXT">
-                                </div>
-
-                                
+                                </div>                           
 
                             </div>
+
+                            <div class="input-wrapper " style=" justify-content: center;">
+                                <input type="submit" id="submit-btn" value="REGISTER" style="width: 50%;">
+                            </div>
+
 
                         </div>
 
@@ -186,10 +161,7 @@
         }
     });
 
-    $("#submit-btn").click(function (e) { 
-        e.preventDefault();
-        location.href = "company-register2.html";
-    });
+    
 
 </script>
 

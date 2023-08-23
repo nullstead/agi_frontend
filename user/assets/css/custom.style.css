@@ -480,6 +480,16 @@
     padding-bottom: 2px;
   }
 
+  @media screen and (max-width: 992px) {
+    .about-details .h-text {
+        margin-bottom: 20px;
+    }
+
+    .about-details .h-text::before {
+        content: "-> ";
+    }
+  }
+
   .about-details .h-text:hover {
     border-bottom: 3px solid #C70202;
   }
@@ -507,12 +517,12 @@
     box-sizing: border-box;
   }
 
-  .card-holder {
-    width: 18%;
-    margin: 8px;
+  /* .companies .card-holder {
+    /* width: 18%;
+    margin: 8px; */
     
     /* border: 1px solid red; */
-  }
+  
 
 
 
@@ -535,13 +545,6 @@
     border-bottom: 3px solid #C70202;
   }
 
-  .products .card-holder {
-    width: 18%;
-    margin: 8px;
-    position: relative;
-    /* border: 1px solid red; */
-  }
-
   .products .h-text {
     color:#000;
     font-family: Poppins;
@@ -550,6 +553,16 @@
     font-weight: 600;
     
 }
+
+@media screen and (max-width: 992px) {
+    .products .h-text {
+        margin-bottom: 20px;
+    }
+
+    .products .h-text::before {
+        content: "-> ";
+    }
+  }
 
 .c-title {
     color: #000;
@@ -562,6 +575,26 @@
 }
 
 
+.my-border {
+    border: 1px solid red;
+}
+
+.card-list {
+    border:  black;
+}
+
+
+.products .card-holder {
+    position: relative;
+  }
+
+
+
+@media screen and (max-width: 992px) {
+    
+  }
+
+
 .products .view-button {
     position: absolute;
     top: 64%;
@@ -572,6 +605,72 @@
     padding: 8px 12px 8px 12px;
     border: whitesmoke;
     border-radius: 5px;
+}
+
+
+@media (max-width:975px) and (min-width:817px) {
+    .products .view-button {
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 8px 5px 8px;
+        font-size: smaller;
+
+    }
+}
+
+@media (max-width:817px) and (min-width:768px) {
+    .products .view-button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 5px 5px 5px;
+        font-size: x-small;
+
+    }
+}
+
+@media (max-width:1506px) and (min-width:1443px) {
+    .products .view-button {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 8px 5px 8px;
+
+    }
+}
+
+@media (max-width:1443px) and (min-width:992px) {
+    .products .view-button {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 8px 5px 8px;
+        font-size: smaller;
+
+    }
+}
+
+@media (max-width:1297px) and (min-width:992px) {
+    .products .view-button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 8px 5px 8px;
+        font-size: x-small;
+
+    }
+}
+
+@media (max-width:663px) and (min-width:576px) {
+    .products .view-button {
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 5px 5px 5px;
+        font-size: x-small;
+
+    }
 }
 
 .products .view-button:hover {

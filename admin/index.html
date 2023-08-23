@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Admin Dashboard | Home </title>
+	<!-- core:css -->
+	<link rel="stylesheet" href="assets/vendors/core/core.css">
+	<!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+	<!-- end plugin css for this page -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/custom.style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+<body>
+	<div class="main-wrapper">
+
+		<!--Sidebar-->
+		<nav class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="sidebar-brand">
+          <!-- A<span>G</span>I -->
+          <img src="./assets/images/logo_white.png" alt="">
+        </a>
+        <div class="sidebar-toggler not-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="sidebar-body">
+        <ul class="nav">
+      
+          <li class="nav-item mb-3 mt-4">
+            <a href="index.html" class="nav-link sidenav-link">
+              <i class="link-icon sidenav-link" data-feather="grid"></i>
+              <span class="link-title sidenav-link text-danger">Dashboard</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item mb-3">
+            <a href="companies.html" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title sidenav-link">Companies</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="chat.html" class="nav-link">
+              <i class="link-icon" data-feather="message-square"></i>
+              <span class="link-title sidenav-link">Chat</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category"></li>
+
+          <li class="nav-item mb-3">
+            <a href="products.html" class="nav-link">
+              <i class="link-icon" data-feather="briefcase"></i>
+              <span class="link-title sidenav-link">Products</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <i class="link-icon" data-feather="info"></i>
+              <span class="link-title sidenav-link">About AGI</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          
+         
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="link-icon" data-feather="log-out"></i>
+              <span class="link-title sidenav-link">Logout</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    
+		<!-- partial -->
+	
+		<div class="page-wrapper ">
+					
+			<!--Navbar-->
+			<nav class="navbar pt-4 pb-4 ">
+				<a href="#" class="sidebar-toggler">
+					<i data-feather="menu"></i>
+				</a>
+				<div class="navbar-content ">
+					<form class="search-form">
+						<div class="input-group">
+							<input type="text" class="form-control" id="navbarForm" placeholder="What are you looking for?">
+              <div style="border-left: 1px solid red;" class="input-group-prepend">
+								<div class="input-group-text">
+									<i  data-feather="search"></i>
+								</div>
+							</div>
+						</div>
+					</form>
+					<ul class="navbar-nav">
+						
+						<li class="nav-item dropdown nav-notifications " id="bell">
+							<a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i data-feather="bell"></i>
+								<div class="indicator">
+									<div class="circle"></div>
+								</div>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="notificationDropdown">
+								<div class="dropdown-header d-flex align-items-center justify-content-between">
+									<p class="mb-0 font-weight-medium">6 New Notifications</p>
+									<a href="javascript:;" class="text-muted">Clear all</a>
+								</div>
+								<div class="dropdown-body">
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="user-plus"></i>
+										</div>
+										<div class="content">
+											<p>New customer registered</p>
+											<p class="sub-text text-muted">2 sec ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="gift"></i>
+										</div>
+										<div class="content">
+											<p>New Order Recieved</p>
+											<p class="sub-text text-muted">30 min ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="alert-circle"></i>
+										</div>
+										<div class="content">
+											<p>Server Limit Reached!</p>
+											<p class="sub-text text-muted">1 hrs ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="layers"></i>
+										</div>
+										<div class="content">
+											<p>Apps are ready for update</p>
+											<p class="sub-text text-muted">5 hrs ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="download"></i>
+										</div>
+										<div class="content">
+											<p>Download completed</p>
+											<p class="sub-text text-muted">6 hrs ago</p>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-footer d-flex align-items-center justify-content-center">
+									<a href="javascript:;">View all</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown nav-profile">
+							<a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="assets/images/kponyojdk.jpg" alt="profile">
+							</a>
+							<div class="dropdown-menu" aria-labelledby="profileDropdown">
+								<div class="dropdown-header d-flex flex-column align-items-center">
+									<div class="figure mb-3">
+										<img src="assets/images/kponyojdk.jpg" alt="">
+									</div>
+									<div class="info text-center">
+										<p class="name font-weight-bold mb-0">KponyoJDK</p>
+										<p class="email text-muted mb-3">johnkponyo@hotmail.com</p>
+									</div>
+								</div>
+								<div class="dropdown-body">
+									<ul class="profile-nav p-0 pt-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												<i data-feather="user"></i>
+												<span>Profile</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="javascript:;" class="nav-link">
+												<i data-feather="edit"></i>
+												<span>Edit Profile</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="javascript:;" class="nav-link">
+												<i data-feather="log-out"></i>
+												<span>Log Out</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+      <!--Main content-->
+	<div class="page-content ">
+
+		<!--Welcome Text-->
+        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin welcome">
+          <div class="mt-4">
+            <h4 class="mb-3 mb-md-0">Hello, Kponyo JDK</h4>
+			<p class="mt-2">Here is the information about all your affiliated companies.</p>
+          </div>
+        </div>
+
+		<div class="row ">
+			<div class="col-12 col-lg-8">
+
+				<!--Highlights Summary-->
+				<div class="row mt-4 " style="display: flex; justify-content: center;">
+					<div class=" stretch-card ">
+					  <div class="row flex-grow">
+						<div class="col-md-3 grid-margin stretch-card highlights">
+						  <div class="card">
+							<div class="card-body">
+							  <div class="d-flex justify-content-between align-items-baseline">
+								<h1 class="card-title mb-0 head1">12</h1>
+								<div class="dropdown mb-2">
+									<i class="icon-lg custom-text pb-3px" data-feather="users"></i>
+								</div>
+							  </div>
+							  <div class="row">
+								<div class="col-lg-12 ">
+								  <p class="mb-2 h-text">Companies</p>
+								  <div class="d-flex align-items-baseline">
+									<p class="custom-text">
+									  <i data-feather="arrow-up-right" class="icon-sm mb-1"></i>
+									  <span class="text-secondary">+2 new registrations</span>
+									</p>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+		
+						<div class="col-md-3 grid-margin stretch-card highlights">
+							<div class="card">
+							  <div class="card-body">
+								<div class="d-flex justify-content-between align-items-baseline">
+								  <h1 class="card-title mb-0 head1">15,000</h1>
+								  <div class="dropdown mb-2">
+									  <i class="icon-lg custom-text pb-3px" data-feather="users"></i>
+								  </div>
+								</div>
+								<div class="row">
+								  <div class="col-lg-12 ">
+									<p class="mb-2 h-text">Products</p>
+									<div class="d-flex align-items-baseline">
+									  <p class="custom-text">
+										<i data-feather="arrow-up-right" class="icon-sm mb-1"></i>
+										<span class="text-secondary">+100 products added</span>
+									  </p>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+		
+						  <div class="col-md-3 grid-margin stretch-card highlights">
+							<div class="card">
+							  <div class="card-body">
+								<div class="d-flex justify-content-between align-items-baseline">
+								  <h1 class="card-title mb-0 head1">40</h1>
+								  <div class="dropdown mb-2">
+									  <i class="icon-lg custom-text pb-3px" data-feather="users"></i>
+								  </div>
+								</div>
+								<div class="row">
+								  <div class="col-lg-12 ">
+									<p class="mb-2 h-text">Services</p>
+									<div class="d-flex align-items-baseline">
+									  <p class="custom-text">
+										<i data-feather="arrow-up-right" class="icon-sm mb-1"></i>
+										<span class="text-secondary">+100 services added</span>
+									  </p>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+		
+						  <div class="col-md-3 grid-margin stretch-card highlights">
+							<div class="card">
+							  <div class="card-body">
+								<div class="d-flex justify-content-between align-items-baseline">
+								  <h1 class="card-title mb-0 head1">15</h1>
+								  <div class="dropdown mb-2">
+									  <i class="icon-lg custom-text pb-3px" data-feather="users"></i>
+								  </div>
+								</div>
+								<div class="row">
+								  <div class="col-lg-12 ">
+									<p class="mb-2 h-text">Pending Approvals</p>
+									<div class="d-flex align-items-baseline">
+									  <p class="custom-text">
+										<!-- <i data-feather="arrow-up-right" class="icon-sm mb-1"></i> -->
+										<span class="text-secondary">companies</span>
+									  </p>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+		
+					  </div>		
+					</div>
+				  </div> 
+
+				  <!--Companies Owl carousel-->
+				  <div class="row mt-4">
+					<div class="col-12">
+						<div class="card companies">
+						  <div class="card-body">
+							<h6 class="card-title h-text">Companies</h6>
+			
+							<div class="owl-carousel owl-theme owl-mouse-wheel">
+
+							  <div class="item">
+								<div class="card" style="width: 100%;">
+									<div class="pt-3 pl-5 pr-5 pb-3 text-center">
+										<img class="card-img-top " src="assets/images/c1.png" alt="Card image cap">
+										<p class="mt-2 company-name">SSNIT Ghana</p>
+										<p class="mt-1"><span class="est">est</span> <span class="date">1963</span></p>
+									</div>
+									<div class="p-2 details">
+										<div class="d-flex justify-content-between mb-3 mt-1">
+											<div>
+												<p class="dept-top">Department</p>
+												<p class="dept-bottom">Electricity Power</p>
+											</div>
+											<div>
+												<p class="dept-top">Date Joined</p>
+												<p class="dept-bottom">12th August, 2023</p>
+											</div>
+										</div>
+										<div class="mt-2 p-3">
+											<p class="custom-text">
+												<i data-feather="mail" class="icon-sm mb-1"></i>
+												<span class="contact">ecg@ecgghana.com</span>
+											</p>
+											<p class="custom-text">
+												<i data-feather="phone" class="icon-sm mb-1"></i>
+												<span class="contact"> +233 54 818 3192</span>
+											</p>
+										</div>
+									</div>
+								  </div>
+							  </div>
+							  
+							  <div class="item">
+								<div class="card" style="width: 100%;">
+									<div class="pt-3 pl-5 pr-5 pb-3 text-center">
+										<img class="card-img-top " src="assets/images/c2.png" alt="Card image cap">
+										<p class="mt-2 company-name">SSNIT Ghana</p>
+										<p class="mt-1"><span class="est">est</span> <span class="date">1963</span></p>
+									</div>
+									<div class="p-2 details">
+										<div class="d-flex justify-content-between mb-3 mt-1">
+											<div>
+												<p class="dept-top">Department</p>
+												<p class="dept-bottom">Electricity Power</p>
+											</div>
+											<div>
+												<p class="dept-top">Date Joined</p>
+												<p class="dept-bottom">12th August, 2023</p>
+											</div>
+										</div>
+										<div class="mt-2 p-3">
+											<p class="custom-text">
+												<i data-feather="mail" class="icon-sm mb-1"></i>
+												<span class="contact">ecg@ecgghana.com</span>
+											</p>
+											<p class="custom-text">
+												<i data-feather="phone" class="icon-sm mb-1"></i>
+												<span class="contact"> +233 54 818 3192</span>
+											</p>
+										</div>
+									</div>
+								  </div>
+							  </div>
+
+							  <div class="item">
+								<div class="card" style="width: 100%;">
+									<div class="pt-3 pl-5 pr-5 pb-3 text-center">
+										<img class="card-img-top " src="assets/images/c3.png" alt="Card image cap">
+										<p class="mt-2 company-name">SSNIT Ghana</p>
+										<p class="mt-1"><span class="est">est</span> <span class="date">1963</span></p>
+									</div>
+									<div class="p-2 details">
+										<div class="d-flex justify-content-between mb-3 mt-1">
+											<div>
+												<p class="dept-top">Department</p>
+												<p class="dept-bottom">Electricity Power</p>
+											</div>
+											<div>
+												<p class="dept-top">Date Joined</p>
+												<p class="dept-bottom">12th August, 2023</p>
+											</div>
+										</div>
+										<div class="mt-2 p-3">
+											<p class="custom-text">
+												<i data-feather="mail" class="icon-sm mb-1"></i>
+												<span class="contact">ecg@ecgghana.com</span>
+											</p>
+											<p class="custom-text">
+												<i data-feather="phone" class="icon-sm mb-1"></i>
+												<span class="contact"> +233 54 818 3192</span>
+											</p>
+										</div>
+									</div>
+								  </div>
+							  </div>
+
+							  <div class="item">
+								<div class="card" style="width: 100%;">
+									<div class="pt-3 pl-5 pr-5 pb-3 text-center">
+										<img class="card-img-top " src="assets/images/c3.png" alt="Card image cap">
+										<p class="mt-2 company-name">SSNIT Ghana</p>
+										<p class="mt-1"><span class="est">est</span> <span class="date">1963</span></p>
+									</div>
+									<div class="p-2 details">
+										<div class="d-flex justify-content-between mb-3 mt-1">
+											<div>
+												<p class="dept-top">Department</p>
+												<p class="dept-bottom">Electricity Power</p>
+											</div>
+											<div>
+												<p class="dept-top">Date Joined</p>
+												<p class="dept-bottom">12th August, 2023</p>
+											</div>
+										</div>
+										<div class="mt-2 p-3">
+											<p class="custom-text">
+												<i data-feather="mail" class="icon-sm mb-1"></i>
+												<span class="contact">ecg@ecgghana.com</span>
+											</p>
+											<p class="custom-text">
+												<i data-feather="phone" class="icon-sm mb-1"></i>
+												<span class="contact"> +233 54 818 3192</span>
+											</p>
+										</div>
+									</div>
+								  </div>
+							  </div>
+
+							  <div class="item">
+								<div class="card" style="width: 100%;">
+									<div class="pt-3 pl-5 pr-5 pb-3 text-center">
+										<img class="card-img-top " src="assets/images/c1.png" alt="Card image cap">
+										<p class="mt-2 company-name">SSNIT Ghana</p>
+										<p class="mt-1"><span class="est">est</span> <span class="date">1963</span></p>
+									</div>
+									<div class="p-2 details">
+										<div class="d-flex justify-content-between mb-3 mt-1">
+											<div>
+												<p class="dept-top">Department</p>
+												<p class="dept-bottom">Electricity Power</p>
+											</div>
+											<div>
+												<p class="dept-top">Date Joined</p>
+												<p class="dept-bottom">12th August, 2023</p>
+											</div>
+										</div>
+										<div class="mt-2 p-3">
+											<p class="custom-text">
+												<i data-feather="mail" class="icon-sm mb-1"></i>
+												<span class="contact">ecg@ecgghana.com</span>
+											</p>
+											<p class="custom-text">
+												<i data-feather="phone" class="icon-sm mb-1"></i>
+												<span class="contact"> +233 54 818 3192</span>
+											</p>
+										</div>
+									</div>
+								  </div>
+							  </div>
+
+							</div>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+
+			</div>
+
+			<!--notifications-->
+			<div class="col-12 col-lg-4">
+				<div class="row">
+					<div class="col-12">
+						<div class="card notifications">
+							<div class="card-body">
+								<div class="d-flex justify-content-between mb-4">
+									<p class="not">Notifications</p>
+									<p class="view-all">View All</p>
+								</div>
+								<hr>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/kponyojdk.jpg" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">New customer registered</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/n2.png" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">ECG Ghana made a post</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/n1.png" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">GRA Ghana made a post</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/kponyojdk.jpg" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">New customer registered</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/n2.png" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">ECG Ghana made a post</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/n1.png" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">GRA Ghana made a post</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="notification-group" >
+									<div class="d-flex justify-content-start ">
+										<div class="">
+											<img class="rounded-circle " src="assets/images/n1.png" alt="" width="40" height="40">
+										</div>
+										<div class="ml-4">
+											<p class="h-text">GRA Ghana made a post</p>
+											<p class="sub-text text-muted s-text">2 sec ago</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- row -->
+
+		
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+	</div>
+
+			<!-- Footer-->
+			<!-- <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<p class="text-muted text-center text-md-left">Copyright © 2022 <a href="#" target="_blank">AGI</a>. All rights reserved</p>
+				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Designed With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i> By KponyoJDK</p>
+			</footer> -->
+			<!-- partial -->
+		
+		</div>
+	</div>
+
+
+
+  <!---Scripts--->
+
+	<!-- core:js -->
+	<script src="assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="assets/vendors/jquery.flot/jquery.flot.js"></script>
+  <script src="assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="assets/vendors/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendors/jquery-mousewheel/jquery.mousewheel.js"></script>
+	<!-- end plugin js for this page -->
+	<!-- inject:js -->
+	<script src="assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<!-- endinject -->
+  <!-- custom js for this page -->
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/carousel.js"></script>
+	<!-- end custom js for this page -->
+</body>
+</html>    

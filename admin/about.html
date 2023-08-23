@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>AGI | About </title>
+	<!-- core:css -->
+	<link rel="stylesheet" href="assets/vendors/core/core.css">
+	<!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+	<!-- end plugin css for this page -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/custom.style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <style>
+	html, body {
+		height: 100%;
+	}
+  </style>
+</head>
+<body>
+	<div class="main-wrapper">
+
+		<!--Sidebar-->
+		<nav class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="sidebar-brand">
+          <!-- A<span>G</span>I -->
+          <img src="./assets/images/logo_white.png" alt="">
+        </a>
+        <div class="sidebar-toggler not-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="sidebar-body">
+        <ul class="nav">
+      
+          <li class="nav-item mb-3 mt-4">
+            <a href="index.html" class="nav-link sidenav-link">
+              <i class="link-icon sidenav-link" data-feather="grid"></i>
+              <span class="link-title sidenav-link ">Dashboard</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item mb-3">
+            <a href="companies.html" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title sidenav-link">Companies</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="chat.html" class="nav-link">
+              <i class="link-icon" data-feather="message-square"></i>
+              <span class="link-title sidenav-link">Chat</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category"></li>
+
+          <li class="nav-item mb-3">
+            <a href="products.html" class="nav-link">
+              <i class="link-icon" data-feather="briefcase"></i>
+              <span class="link-title sidenav-link ">Products</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <i class="link-icon" data-feather="info"></i>
+              <span class="link-title sidenav-link text-danger">About AGI</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          <li class="nav-item nav-category"></li>
+          
+         
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="link-icon" data-feather="log-out"></i>
+              <span class="link-title sidenav-link">Logout</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    
+		<!-- partial -->
+	
+		<div class="page-wrapper ">
+					
+			<!--Navbar-->
+			<nav class="navbar pt-4 pb-4 ">
+				<a href="#" class="sidebar-toggler">
+					<i data-feather="menu"></i>
+				</a>
+				<div class="navbar-content ">
+					<form class="search-form">
+						<div class="input-group">
+							<input type="text" class="form-control" id="navbarForm" placeholder="What are you looking for?">
+              <div style="border-left: 1px solid red;" class="input-group-prepend">
+								<div class="input-group-text">
+									<i  data-feather="search"></i>
+								</div>
+							</div>
+						</div>
+					</form>
+					<ul class="navbar-nav">
+						
+						<li class="nav-item dropdown nav-notifications " id="bell">
+							<a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i data-feather="bell"></i>
+								<div class="indicator">
+									<div class="circle"></div>
+								</div>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="notificationDropdown">
+								<div class="dropdown-header d-flex align-items-center justify-content-between">
+									<p class="mb-0 font-weight-medium">6 New Notifications</p>
+									<a href="javascript:;" class="text-muted">Clear all</a>
+								</div>
+								<div class="dropdown-body">
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="user-plus"></i>
+										</div>
+										<div class="content">
+											<p>New customer registered</p>
+											<p class="sub-text text-muted">2 sec ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="gift"></i>
+										</div>
+										<div class="content">
+											<p>New Order Recieved</p>
+											<p class="sub-text text-muted">30 min ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="alert-circle"></i>
+										</div>
+										<div class="content">
+											<p>Server Limit Reached!</p>
+											<p class="sub-text text-muted">1 hrs ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="layers"></i>
+										</div>
+										<div class="content">
+											<p>Apps are ready for update</p>
+											<p class="sub-text text-muted">5 hrs ago</p>
+										</div>
+									</a>
+									<a href="javascript:;" class="dropdown-item">
+										<div class="icon">
+											<i data-feather="download"></i>
+										</div>
+										<div class="content">
+											<p>Download completed</p>
+											<p class="sub-text text-muted">6 hrs ago</p>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-footer d-flex align-items-center justify-content-center">
+									<a href="javascript:;">View all</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown nav-profile">
+							<a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="assets/images/kponyojdk.jpg" alt="profile">
+							</a>
+							<div class="dropdown-menu" aria-labelledby="profileDropdown">
+								<div class="dropdown-header d-flex flex-column align-items-center">
+									<div class="figure mb-3">
+										<img src="assets/images/kponyojdk.jpg" alt="">
+									</div>
+									<div class="info text-center">
+										<p class="name font-weight-bold mb-0">KponyoJDK</p>
+										<p class="email text-muted mb-3">johnkponyo@hotmail.com</p>
+									</div>
+								</div>
+								<div class="dropdown-body">
+									<ul class="profile-nav p-0 pt-3">
+										<li class="nav-item">
+											<a href="#" class="nav-link">
+												<i data-feather="user"></i>
+												<span>Profile</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="javascript:;" class="nav-link">
+												<i data-feather="edit"></i>
+												<span>Edit Profile</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="javascript:;" class="nav-link">
+												<i data-feather="log-out"></i>
+												<span>Log Out</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+      <!--Main content-->
+	<div class="page-content ">
+
+		<div class="row">
+            <div class="col-12 col-lg-12 about-hero">
+                <div class="img-div">
+					
+                    <div class="about-text-div about-text">
+                        <p>About AGI</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+		<div class="row mt-5">
+			<div class="col-lg-7 ">
+				<div class="about-details ">
+					<div class="d-flex flex-column flex-lg-row justify-content-between  ">
+						<p id="d1" class="h-text mb-2">Who are we?</p>
+						<p id="d2" class="h-text mb-2">Our Mission</p>
+						<p id="d3" class="h-text mb-2">Our Vision</p>
+						<p id="d4" class="h-text">Buisiness Services</p>
+							
+					</div>
+					<div id="t1" class="detail" style="display: block;">
+						The Association of Ghana Industries (AGI) is a not-for-profit business
+						organization established in 1957 and incorporated in 1958 by a group of
+						indigenous manufacturers in Ghana. Today. AGI is recognized as the leading 
+						voice of the private sector in Ghana. The Association of Ghana Industries (AGI) 
+						is a not-for-profit business organization established in 1957 and incorporated in 
+						1958 by a group of indigenous manufacturers in Ghana. Today. AGI is recognized as the 
+						leading voice of the private sector in Ghana. 
+				  </div>
+				  <div id="t2" class="detail" style="display: none;">
+					Our mission is to carry out proactive support services to the industrial sector with the view
+					 to contributing substantially to the growth and development of industry in Ghana.
+			  	</div>
+				  <div id="t3" class="detail" style="display: none;">
+					To contribute substantially to the growth and development of Industry through effective policy
+					 advocacy and provisionof business support services. To be the number one voice for Industry by 
+					 growing a strong industrial base with keysectors that are globally competitive. 
+			  	</div>
+				  <div id="t4" class="detail" style="display: none;">
+					AGI provides the following services to members:
+					Business information/Market Research
+					Policy forums & workshops
+					Technical and Management training
+					Monthly and Special Business Networking events
+					Trade Promotion
+					INDUTECH/Industrial Exhibitions
+					Industrial Partnerships: SPX-Ghana
+					Financing Packages 
+			  	</div>
+				</div>
+			</div>
+			<div class="col-lg-5 side-image">
+				<div class="img-div">
+					<img id="d-image" class="custom-img-fluid" src="assets/images/about2.png" alt="" >
+				</div>
+			</div>
+		</div>
+
+	
+
+		
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+	</div>
+
+			<!-- Footer-->
+			<!-- <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<p class="text-muted text-center text-md-left">Copyright © 2022 <a href="#" target="_blank">AGI</a>. All rights reserved</p>
+				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Designed With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i> By KponyoJDK</p>
+			</footer> -->
+			<!-- partial -->
+		
+		</div>
+	</div>
+
+
+
+  <!---Scripts--->
+
+	<!-- core:js -->
+	<script src="assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="assets/vendors/jquery.flot/jquery.flot.js"></script>
+  <script src="assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="assets/vendors/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendors/jquery-mousewheel/jquery.mousewheel.js"></script>
+	<!-- end plugin js for this page -->
+	<!-- inject:js -->
+	<script src="assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<!-- endinject -->
+  <!-- custom js for this page -->
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/carousel.js"></script>
+	<!-- end custom js for this page -->
+
+	<script>
+		$("#d1").click(function (e) { 
+			e.preventDefault();
+			$("#d-image").attr("src","assets/images/about2.png");
+			$('#d1').css({'border-bottom':'3px solid #C70202'});
+			$('#d2,#d3,#d4').css({'border-bottom':'none'});
+			$('#t1').css({'display':'block'});
+			$('#t2,#t3,#t4').css({'display':'none'});
+		});
+
+		$("#d2").click(function (e) { 
+			e.preventDefault();
+			$("#d-image").attr("src","assets/images/about3.png");
+			$('#d2').css({'border-bottom':'3px solid #C70202'});
+			$('#d1,#d3,#d4').css({'border-bottom':'none'});
+			$('#t2').css({'display':'block'});
+			$('#t1,#t3,#t4').css({'display':'none'});
+		});
+
+		$("#d3").click(function (e) { 
+			e.preventDefault();
+			$("#d-image").attr("src","assets/images/about4.png");
+			$('#d3').css({'border-bottom':'3px solid #C70202'});
+			$('#d2,#d1,#d4').css({'border-bottom':'none'});
+			$('#t3').css({'display':'block'});
+			$('#t2,#t1,#t4').css({'display':'none'});
+		});
+
+		$("#d4").click(function (e) { 
+			e.preventDefault();
+			$("#d-image").attr("src","assets/images/about5.png");
+			$('#d4').css({'border-bottom':'3px solid #C70202'});
+			$('#d2,#d3,#d1').css({'border-bottom':'none'});
+			$('#t4').css({'display':'block'});
+			$('#t2,#t3,#t1').css({'display':'none'});
+		});
+
+	</script>
+
+</body>
+</html>    

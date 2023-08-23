@@ -46,7 +46,7 @@
                         <div class="input-field-wrapper">
                             <label class="inp-label mt-1 " for="username">Username</label>
                             <div class="input-wrapper">
-                                <input class="input-field" type="text" placeholder="johndoe" name="username" required>
+                                <input id="username" class="input-field" type="text" placeholder="johndoe" name="username" required>
                             </div>
                         </div>
 
@@ -115,6 +115,12 @@
             $(".user-reg").attr('checked',false);
         }
     });
+
+    $('#submit-btn').click(function (e) { 
+        e.preventDefault();
+        location.href = "dashboard";
+    });
+
 </script>
 
 </body>

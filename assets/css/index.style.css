@@ -25,9 +25,10 @@
 /*bg image*/
 body {
     background-image: url("../img/bg.png");
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow-x: hidden !important;
+    /* overflow-y: hidden !important; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +38,7 @@ body {
 /*two main desktop columns*/
 .left-col {
     position: relative;
-    
+    width: 100%;
 }
 
 .left-col-content {
@@ -130,7 +131,8 @@ body {
 /**right colum**/
 .right-col {
     position: relative;
-
+    /* width: 100%; */
+    
 }
 
 .right-col-content {
@@ -492,11 +494,18 @@ body {
  /**mobile screen**/
 
  @media only screen and (max-width: 991px){
+
+  .right-col {
+    position: relative;
+    display: flex;
+    /* border: 1px solid rgb(99, 65, 252); */
+}
+
   .left-col-content {
     position: absolute;
     width: 90%;
     height: fit-content;
-    top: 28rem;
+    top: 62vh;
     left: 0;
     margin: 0px 26px;
     /* margin: auto; */
@@ -515,7 +524,7 @@ body {
 .left-col-content p#second {
     color: #FFF;
     font-family: Rubik;
-    font-size: 260%;
+    font-size: 13vw;
     font-style: normal;
     font-weight: 900;
     line-height: 88%; /* 130% */
@@ -581,10 +590,11 @@ body {
   position: absolute;
   width: 90%;
   height: fit-content;
-  top: 2rem;
+  top: 2vh;
+  left: 3.5%;
   border-radius: 10px;
   background: #FFF;
-  margin: auto;
+  justify-content: center;
 }
 
 .logo-wrapper {
@@ -608,7 +618,7 @@ body {
 
 .form-wrapper {
   /* border: 1px solid red; */
-  margin: 0px 55px 0px 55px;
+  margin: 0px 15px 0px 15px;
 }
 
 
@@ -627,7 +637,7 @@ body {
 
 .input-field {
   width: 100%;
-  padding: 20px 5px 8px 12%;
+  padding: 30px 5px 8px 12%;
   outline: none;
   border: none;
 }
@@ -642,7 +652,7 @@ body {
   padding: 10px 0px 10px 0px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
   opacity: 0.9;
   border-radius: 8px;
   color: #FFF;
@@ -651,6 +661,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 135.5%; /* 21.68px */
+  margin: auto;
 }
 
 #submit-btn:hover {
@@ -660,11 +671,11 @@ body {
 #forgot-password {
   color: #C70202;
   font-family: Poppins;
-  font-size: 75%;
+  font-size: 70%;
   font-style: normal;
-  font-weight: 600;
-  line-height: 135.5%; /* 21.68px */
+  font-weight: 400;
   text-decoration: none;
+  /* padding-top: 0px; */
 }
 
 #rem-me {
@@ -673,29 +684,34 @@ body {
   font-size: 78%;
   font-style: normal;
   font-weight: 400;
-  line-height: 135.5%; /* 21.68px */
+  
 }
 
+
 #check {
+  margin-left: -15px;
   width: 15px;
   height: 15px;
   border-radius: 4px;
   border: 1px solid #D9D9D9;
 }
 
+
 #check:checked{
   background-color: #C70202;
 }
 
+
 .inp-label {
   position: absolute;
-  left: 115px;
+  left: 80px;
   color: var(--black, #2F2F2F);
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 135.5%; /* 16.26px */
+  margin-top: 5px;
 } 
 
 }

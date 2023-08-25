@@ -12,73 +12,78 @@
 
 <body>
    
-<div class="row">
-    <div class="col-lg-6">
-        <div class="left-col">
-            <div class="left-col-content">
-                <p id="first">JOIN OUR MARKETPLACE</p>
-                <p id="second">COMMUNITY</p>
-                <p id="third">
-                The next generation social network & community! Connect
-                with businesses and contribute to question pools to get 
-                valuable connect points.
-                </p>
-                <div id="buttons">
-                    <button id="login">Login</button><button id="register">Register</button>
-                </div>
-                <div class="reg-type mt-4">
-                    <span class="reg-text me-3">I am registering as: </span>
-                    <span class="reg-text me-3"><input checked disabled class="form-check-input me-2 user-reg" id="check" type="checkbox"><label class=" me-3" for="" id="user-reg"> User</label></span>
-                    <span class="reg-text "><input class="form-check-input me-2 company-reg" id="check" type="checkbox"><label class="" for="" id="company-reg"> Comany</label></span>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6" >
+            <div class="left-col">
+                <div class="left-col-content" >
+                    <div id="logreg-text" style="display: none;">
+                        <p id="first">JOIN OUR MARKETPLACE</p>
+                        <p id="second">COMMUNITY</p>
+                        <p id="third">
+                        The next generation social network & community! Connect
+                        with businesses and contribute to question pools to get 
+                        valuable connect points.
+                        </p>
+                    </div>
+                    
+                    <div class="reg-type mt-4">
+                        <span class="reg-text me-4">I am registering as: </span>
+                        <span class="reg-text me-2"><input checked disabled class="form-check-input  user-reg" id="check" type="checkbox"><label class=" me-3" for="" id="user-reg"> User</label></span>
+                        <span class="reg-text "><input class="form-check-input me-1 company-reg" id="check" type="checkbox"><label class="" for="" id="company-reg"> Comany</label></span>
+                    </div>
+                    <div id="buttons" class="">
+                        <button id="login">Login</button><button id="register">Register</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-lg-6">
-        <div class="right-col">
-            <div class="right-col-content">
-                <div class="logo-wrapper">
-                    <div id="logo"></div>
-                </div>
-                <div class="form-wrapper ">
-                    <form action="#">
-                        <div class="input-field-wrapper">
-                            <label class="inp-label mt-1 " for="username">Username</label>
-                            <div class="input-wrapper">
-                                <input id="username" class="input-field" type="text" placeholder="johndoe" name="username" required>
+    
+        <div class="col-lg-6">
+            <div class="right-col">
+                <div class="right-col-content">
+                    <div class="logo-wrapper">
+                        <div id="logo"></div>
+                    </div>
+                    <div class="form-wrapper ">
+                        <form action="#">
+                            <div class="input-field-wrapper">
+                                <label class="inp-label mt-1 " for="username">Username</label>
+                                <div class="input-wrapper">
+                                    <input id="username" class="input-field" type="text" placeholder="johndoe" name="username" required>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="input-field-wrapper">
-                            <label class="inp-label mt-1" for="email">Email</label>
-                            <div class="input-wrapper">
-                                <input class="input-field" type="email" placeholder="johndoe@doe.com" name="email" required>
+    
+                            <div class="input-field-wrapper">
+                                <label class="inp-label mt-1" for="email">Email</label>
+                                <div class="input-wrapper">
+                                    <input class="input-field" type="email" placeholder="johndoe@doe.com" name="email" required>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="input-field-wrapper">
-                            <label class="inp-label mt-1" for="phone">Phone</label>
-                            <div class="input-wrapper">
-                                <input class="input-field" type="tel" placeholder="0541122334" name="phone" required>
+    
+                            <div class="input-field-wrapper">
+                                <label class="inp-label mt-1" for="phone">Phone</label>
+                                <div class="input-wrapper">
+                                    <input class="input-field" type="tel" placeholder="0541122334" name="phone" required>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="input-field-wrapper">
-                            <label class="inp-label mt-1" for="password">password</label>
-                            <div class="input-wrapper">
-                                <input class="input-field " type="password" placeholder="*********" name="email" required >
-                                <!-- <div class="input-group-addon">
-                                    <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
-                                </div> -->
+    
+                            <div class="input-field-wrapper">
+                                <label class="inp-label mt-1" for="password">password</label>
+                                <div class="input-wrapper">
+                                    <input class="input-field " type="password" placeholder="*********" name="email" required >
+                                    <!-- <div class="input-group-addon">
+                                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                    </div> -->
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="input-wrapper mt-5">
-                            <input type="submit" id="submit-btn" value="Register">
-                        </div>
-
-                    </form>
+    
+                            <div class="input-wrapper ">
+                                <input type="submit" id="submit-btn" value="Register">
+                            </div>
+    
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,6 +109,20 @@
 <script src="./assets/js/preloader.js"></script>
 
 <script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            // document.body.style.backgroundColor = "yellow";
+            $('#logreg-text').css({'display':'none'});
+        } else {
+            $('#logreg-text').css({'display':'block'});
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 991px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+
     $("#login").click(function (e) { 
         e.preventDefault();
         location.href = "index.html";
@@ -120,6 +139,8 @@
         e.preventDefault();
         location.href = "dashboard";
     });
+
+
 
 </script>
 

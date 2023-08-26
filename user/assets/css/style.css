@@ -19459,6 +19459,10 @@ code {
   width: 92px;
   height: 92px; }
 
+  .img-md {
+  width: 52px;
+  height: 52px; }
+
 .img-sm {
   width: 43px;
   height: 43px; }
@@ -23734,7 +23738,7 @@ select {
       width: 100%;
       padding: 0 20px; }
       .profile-page .profile-header .cover .cover-body .profile-pic {
-        border-radius: 50%;
+        border-radius: 8%;
         width: 100px; }
         @media (max-width: 767px) {
           .profile-page .profile-header .cover .cover-body .profile-pic {

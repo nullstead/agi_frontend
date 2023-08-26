@@ -753,3 +753,383 @@
   .products .load-more .text:hover {
     color: white;
   }
+
+
+
+
+
+
+
+  /**===========Community Page=========**/
+  /**profile**/
+  .profile .view-btn {
+    border-radius: 3px;
+    background:#C70202;
+    border: none;
+    padding: 10px 28px
+  }
+
+  .profile .view-btn-text{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 240% */
+    letter-spacing: -0.06px;
+  }
+
+  .profile .name {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.078px;
+    margin: 5px;
+  }
+
+
+  
+
+  /**companies following**/
+  .companies-follow .h-text {
+    color: var(--dmv-black, #23262F);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.companies-follow .s-text {
+    color: #708099;
+    font-family: Manrope;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.companies-follow .comp-group {
+    /* border: 1px solid red; */
+    padding: 8px;
+    border-radius: 10px;
+    background: white;
+    margin: 16px 0;
+}
+
+
+/**people you may know**/
+.people .h-text {
+    color: var(--dmv-black, #23262F);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.people .s-text {
+    color: #708099;
+    font-family: Manrope;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.people .people-group {
+    /* border: 1px solid red; */
+    padding: 8px;
+    border-radius: 10px;
+    background: white;
+    margin: 16px 0;
+}
+
+.people .p-icon {
+    width: 26px;
+    height: 26px;
+    background: url(../images/msg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/**leaderboard**/
+.leaderboard .h-text {
+    color: var(--dmv-black, #23262F);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.leaderboard .s-text {
+    color: #708099;
+    font-family: Manrope;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.leaderboard .people-group {
+    /* border: 1px solid red; */
+    padding: 8px;
+    border-radius: 10px;
+    background: white;
+    margin: 16px 0;
+}
+
+.leaderboard .p-icon {
+    width: 26px;
+    height: 26px;
+    background: url(../images/trophy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.far-right-wrapper {
+    display: none;
+    
+}
+
+@media only screen and (min-width: 1600px){
+    .far-right-wrapper {
+        display: block;
+        width: 16.66%;
+    }
+
+}
+
+
+/**create posts**/
+
+.posts .card-custom {
+    border-radius: 5px;
+    background: #F8F8F8;
+}
+
+.posts .wioym {
+    color: #000;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 126.316% */
+    letter-spacing: -0.114px;
+}
+
+.posts textarea {
+    width: 100%;
+    border: solid whitesmoke;
+    border-radius: 16px;
+    padding: 20px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.096px;
+}
+
+
+.posts .post-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.078px;
+}
+
+.posts .my-icon1 {
+    color: #39B400E5;
+}
+
+.posts .my-icon2 {
+    color: #C70202;
+}
+
+.posts .my-icon3 {
+    color: #9747FF;
+}
+
+.posts .post-btn {
+    border-radius: 3px;
+    background:  #C70202;
+    border: none;
+    padding: 10px 40px;
+  }
+
+
+.posts .post-btn-text {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.096px;
+}
+
+
+.posts .card-footer a {
+    color: var(--text-grey, #787878);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.108px;
+}
+
+
+
+
+
+
+
+/**newsfeed**/
+.newsfeed .menu-icon {
+    color: #0DA9F0;
+    
+}
+
+.newsfeed .poster-name {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.096px;
+}
+
+.newsfeed .mins {
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.078px;
+}
+
+.newsfeed .post-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.078px;
+}
+
+.newsfeed .my-icon {
+    color: #0DA9F0;
+}
+
+.newsfeed .card-footer a {
+    color: var(--text-grey, #787878);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.108px;
+}
+
+
+
+/**comments**/
+.comments .dp-div {
+    margin: 0px 20px;
+    
+}
+
+.comments .poster {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.096px;
+}
+
+.comments .mins {
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.078px;
+    margin-bottom: 8px;
+}
+
+.comments .comment-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 184.615% */
+    letter-spacing: -0.078px;
+}
+
+
+.comments .my-icon {
+    color: #0DA9F0;
+}
+
+
+.comments .likes {
+    color: #0DA9F0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    letter-spacing: -0.09px;
+}
+
+
+.comments .reply {
+    color: #131313;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    letter-spacing: -0.09px;
+}
+
+
+.comments .mg{
+    width: 100%;
+    margin: 0px 20px;
+    /* padding: 28px 0px; */
+    /* border: 1px solid black; */
+}
+
+.comments .more-text {
+    color: #0DA9F0;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.108px;
+    cursor: pointer;
+}
+
+
+.comments .write textarea{
+    width: 100%;
+    border-radius: 6px;
+    background: #F8F8F8;
+    border: solid whitesmoke;
+    padding: 18px;
+    /* border: 1px solid black; */
+}

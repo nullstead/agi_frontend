@@ -41,12 +41,12 @@
                         <form action="#">
                             <label class="inp-label" for="email">Email</label>
                             <div class="input-wrapper">
-                                <i class="fa fa-envelope fa-2xl icon"></i>
+                                <i id="envelop" class="fa fa-envelope fa-lg icon "></i>
                                 <input class="input-field" type="text" placeholder="john@doe.com" name="email">
                             </div>
                             <label class="inp-label" for="password">Password</label>
                             <div class="input-wrapper">
-                                <i class="fa fa-key fa-2xl icon"></i>
+                                <i id="key" class="fa fa-key fa-lg icon"></i>
                                 <input class="input-field" type="password" placeholder="************" name="password">
                             </div>
                             <div class="input-wrapper mb-4" style="padding: 0px 0px 0px 10px;">
@@ -91,6 +91,24 @@
 
 
 <script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            // document.body.style.backgroundColor = "yellow";
+            // $('#key').removeClass("fa fa-key fa-2xl icon");
+            // $('#envelop').removeClass("fa fa-envelope fa-2xl icon");
+            // $('#envelop').addClass("fa fa-envelope fa-lg icon");
+            // $('#key').addClass("fa fa-key fa-lg icon");
+            
+        } else {
+            
+            
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 991px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
     $("#register").click(function (e) { 
         e.preventDefault();
         location.href = "user-register.html";

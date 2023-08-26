@@ -638,7 +638,7 @@ body {
 
 .input-field {
   width: 100%;
-  padding: 30px 5px 8px 12%;
+  padding: 30px 5px 8px 5px;
   outline: none;
   border: none;
 }

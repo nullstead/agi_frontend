@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>User Dashboard</title>
+	<title>User Dashboard | Community </title>
 	<!-- core:css -->
 	<link rel="stylesheet" href="assets/vendors/core/core.css">
 	<!-- endinject -->
   <!-- plugin css for this page -->
   <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl.carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
 	<!-- end plugin css for this page -->
 	<!-- inject:css -->
 	<link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
@@ -17,91 +20,92 @@
 	<!-- endinject -->
   <!-- Layout styles -->  
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/custom.style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="assets/images/favicon.png" />
 </head>
 <body>
 	<div class="main-wrapper">
 
-		<!--================Sidebar=============-->
-	<nav class="sidebar">
-      <div class="sidebar-header">
-        <a href="index.html" class="sidebar-brand">
-          <!-- A<span>G</span>I -->
-          <img src="./assets/images/logo_white.png" alt="">
-        </a>
-        <div class="sidebar-toggler not-active">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="sidebar-body">
-        <ul class="nav">
+		<!--Sidebar-->
+		<nav class="sidebar">
+            <div class="sidebar-header">
+              <a href="index.html" class="sidebar-brand">
+                <!-- A<span>G</span>I -->
+                <img src="./assets/images/logo_white.png" alt="">
+              </a>
+              <div class="sidebar-toggler not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="sidebar-body">
+              <ul class="nav">
+            
+                <li class="nav-item mb-3 mt-4">
+                  <a href="index.html" class="nav-link sidenav-link">
+                    <i class="link-icon sidenav-link" data-feather="users"></i>
+                    <span class="link-title sidenav-link text-danger">Community</span>
+                  </a>
+                </li>
       
-          <li class="nav-item mb-3 mt-4">
-            <a href="community.html" class="nav-link sidenav-link">
-              <i class="link-icon sidenav-link" data-feather="users"></i>
-              <span class="link-title sidenav-link text-danger">Community</span>
-            </a>
-          </li>
-
-
-          <li class="nav-item mb-3">
-            <a href="marketplace.html" class="nav-link">
-              <i class="link-icon" data-feather="shopping-bag"></i>
-              <span class="link-title sidenav-link">Marketplace</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="chat.html" class="nav-link">
-              <i class="link-icon" data-feather="message-square"></i>
-              <span class="link-title sidenav-link">Chat</span>
-            </a>
-          </li>
-
-          <li class="nav-item nav-category"></li>
-
-          <li class="nav-item mb-3">
-            <a href="companies.html" class="nav-link">
-              <i class="link-icon" data-feather="grid"></i>
-              <span class="link-title sidenav-link">Comapanies</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              <i class="link-icon" data-feather="info"></i>
-              <span class="link-title sidenav-link">About AGI</span>
-            </a>
-          </li>
-
-          <li class="nav-item nav-category"></li>
-          <li class="nav-item nav-category"></li>
-          <li class="nav-item nav-category"></li>
-          <li class="nav-item nav-category"></li>
-          <li class="nav-item nav-category"></li>
-          <li class="nav-item nav-category"></li>
-          
-         
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="link-icon" data-feather="log-out"></i>
-              <span class="link-title sidenav-link">Logout</span>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
+      
+                <li class="nav-item mb-3">
+                  <a href="marketplace.html" class="nav-link">
+                    <i class="link-icon" data-feather="shopping-bag"></i>
+                    <span class="link-title sidenav-link">Marketplace</span>
+                  </a>
+                </li>
+      
+                <li class="nav-item">
+                  <a href="chat.html" class="nav-link">
+                    <i class="link-icon" data-feather="message-square"></i>
+                    <span class="link-title sidenav-link">Chat</span>
+                  </a>
+                </li>
+      
+                <li class="nav-item nav-category"></li>
+      
+                <li class="nav-item mb-3">
+                  <a href="companies.html" class="nav-link">
+                    <i class="link-icon" data-feather="grid"></i>
+                    <span class="link-title sidenav-link ">Comapanies</span>
+                  </a>
+                </li>
+      
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">
+                    <i class="link-icon" data-feather="info"></i>
+                    <span class="link-title sidenav-link">About AGI</span>
+                  </a>
+                </li>
+      
+                <li class="nav-item nav-category"></li>
+                <li class="nav-item nav-category"></li>
+                <li class="nav-item nav-category"></li>
+                <li class="nav-item nav-category"></li>
+                <li class="nav-item nav-category"></li>
+                <li class="nav-item nav-category"></li>
+                
+               
+      
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="link-icon" data-feather="log-out"></i>
+                    <span class="link-title sidenav-link">Logout</span>
+                  </a>
+                </li>
+      
+              </ul>
+            </div>
+          </nav>
     
 		<!-- partial -->
 	
 		<div class="page-wrapper ">
 					
-			<!--====================Navbar================-->
+			<!--Navbar-->
 			<nav class="navbar pt-4 pb-4 ">
 				<a href="#" class="sidebar-toggler">
 					<i data-feather="menu"></i>
@@ -226,16 +230,638 @@
 			</nav>
 			
       <!--Main content-->
-			<div class="page-content ">
+	<div class="page-content ">
 
-        <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-          <div class="mt-4">
-            <h4 class="mb-3 mb-md-0">Community...</h4>
-          </div>
-        </div>
+		<!--community wrapper-->
+		<div class="container-fluid">
+			<div class="profile-page tx-13">
+				<div class="row">
+				  <div class="col-12 grid-margin">
+						<div class="profile-header">
+									  <div class="cover profile">
+										  <div class="gray-shade"></div>
+										  <figure>
+											  <img src="assets/images/cover-image.png" class="img-fluid" alt="profile cover">
+										  </figure>
+										  <div class="cover-body d-flex justify-content-between align-items-center">
+											  <div >
+												  <img class="profile-pic" src="assets/images/dp.png" alt="profile">
+												  <span class="name ">Kponyo JDK</span>
+												  
+											  </div>
+											  <div class="d-none d-md-block">
+												  <button class="view-btn view-btn-text ">
+													  <i data-feather="eye" class="btn-icon-prepend"></i> View profile
+												  </button>
+											  </div>
+										  </div>
+									  </div>
+									  <div class="header-links">
+										  <ul class="links d-flex align-items-center mt-3 mt-md-0">
+											  <li class="header-link-item ml-3 pl-3 border-left d-flex align-items-center">
+												  <i class="mr-1 icon-md" data-feather="columns"></i>
+												  <a class="pt-1px d-none d-md-block" href="#">Posts <span class="text-muted tx-12">500</span></a>
+											  </li>
+											  <li class="header-link-item ml-3 pl-3 border-left d-flex align-items-center">
+												<i class="mr-1 icon-md" data-feather="users"></i>
+												<a class="pt-1px d-none d-md-block" href="#">Followers <span class="text-muted tx-12">200</span></a>
+											</li>
+											<li class="header-link-item ml-3 pl-3 border-left d-flex align-items-center">
+												<i class="mr-1 icon-md" data-feather="users"></i>
+												<a class="pt-1px d-none d-md-block" href="#">Following <span class="text-muted tx-12">200</span></a>
+											</li>
+											<li class="header-link-item ml-3 pl-3 border-left d-flex align-items-center">
+												<i class="mr-1 icon-md" data-feather="user-plus"></i>
+												<a class="pt-1px d-none d-md-block" href="#">New Followers This Week <span class="text-muted tx-12">200</span></a>
+											</li>
+											  <!-- <li class="header-link-item ml-3 pl-3 border-left d-flex align-items-center">
+												  <i class="mr-1 icon-md" data-feather="video"></i>
+												  <a class="pt-1px d-none d-md-block" href="#">Videos</a>
+											  </li> -->
+										  </ul>
+									  </div>
+					  	</div>
+				  </div>
+						  </div>
+						  <div class="row profile-body">
+							  <!-- left wrapper start -->
+							  <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-2 left-wrapper">
+								  <div class="card rounded companies-follow">
+									  <div class="card-body">
+										  <div class="d-flex align-items-center justify-content-between mb-2">
+											  <h6 class="mb-0">Companies you follow</h6>
+											  <!-- <div class="dropdown">
+												  <button class="btn p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+												  </button>
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+													  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="edit-2" class="icon-sm mr-2"></i> <span class="">Edit</span></a>
+													  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="git-branch" class="icon-sm mr-2"></i> <span class="">Update</span></a>
+													  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="eye" class="icon-sm mr-2"></i> <span class="">View all</span></a>
+												  </div>
+											  </div> -->
+											  
+										  </div>
+										  <div class="comp-group" >
+											<div class="d-flex justify-content-start mt-3">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/kponyojdk.jpg" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">Kponyo JDK</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/n2.png" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">GRA Ghana</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/c1.png" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">SSNIT Ghana</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/c1.png" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">SSNIT Ghana</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/n2.png" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">ECG Ghana </p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/c1.png" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">GRA Ghana made a post</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/n1.png" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">GRA Ghana made a post</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										<div class="comp-group" >
+											<div class="d-flex justify-content-start ">
+												<div class="">
+													<img class="rounded-circle " src="assets/images/kponyojdk.jpg" alt="" width="40" height="40">
+												</div>
+												<div class="ml-4">
+													<p class="h-text">Kponyo JDK</p>
+													<p class="sub-text text-muted s-text">100 Members</p>
+												</div>
+											</div>
+										</div>
+										  
+									  </div>
+								  </div>
+							  </div>
+							  <!-- left wrapper end -->
+							  <!-- middle wrapper start -->
+							  <div class="col-md-4 col-lg-6 col-xl-6  middle-wrapper">
+								  <div class="row">
+
+									<!--create post section-->	
+									<div class="col-md-12 grid-margin posts">
+										<div class="card rounded card-custom">
+											<div class="card-header">
+												<p class="wioym ">What is on your mind today Kponyo JDK?</p>
+											</div>
+											<div class="card-body" >
+												<textarea name="" id="" cols="30" rows="7" >Write something here...</textarea>
+											</div>
+											<div class="card-footer ">
+												<div class="d-flex justify-content-between post-actions ">
+													<a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+														<i class="icon-xl my-icon1" data-feather="image"></i>
+														<p class="d-none d-md-block ml-2"><span>Photo</span></p>
+													</a>
+													<a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+														<i class="icon-xl my-icon2" data-feather="video"></i>
+														<p class="d-none d-md-block ml-2"><span>Video</span></p>
+													</a>
+													<a href="javascript:;" class="d-flex align-items-center text-muted">
+														<i class="icon-xl my-icon3" data-feather="tag"></i>
+														<p class="d-none d-md-block ml-2"><span>Tag Friends</span></p>
+													</a>
+													<a href="javascript:;">
+														<button class="post-btn post-btn-text">POST</button>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!--start of feed-->
+									  <div class="col-md-12 grid-margin newsfeed">
+										  <div class="card rounded">
+											  <div class="card-header">
+												  <div class="d-flex align-items-center justify-content-between">
+													  <div class="d-flex align-items-center">
+														  <img class="img-xs rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														  <div class="ml-2">
+															  <p class="poster-name">Null Stead</p>
+															  <p class="mins">1 min ago</p>
+														  </div>
+													  </div>
+													  <div class="dropdown">
+														  <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															  <i class="icon-xxl pb-3px menu-icon" data-feather="more-horizontal"></i>
+														  </button>
+														  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+															  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="meh" class="icon-sm mr-2"></i> <span class="">Unfollow</span></a>
+															  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="corner-right-up" class="icon-sm mr-2"></i> <span class="">Go to post</span></a>
+															  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="share-2" class="icon-sm mr-2"></i> <span class="">Share</span></a>
+															  <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="copy" class="icon-sm mr-2"></i> <span class="">Copy link</span></a>
+														  </div>
+													  </div>
+												  </div>
+											  </div>
+											  <div class="card-body" >
+												  <p class="mb-3 post-text">Hey Guys!!! AGI Community is making waves on the media now. It is unbelievable how this platform has overtaken the likes of Quora, Pinterest, Reddit and other communities. Let’s keep up the energy and build valuable connections. Hurrayyyyyyyyyy.</p>
+												  <img class="img-fluid" src="assets/images/feed1.png" alt="">
+											  </div>
+											  <div class="card-footer ">
+												  <div class="d-flex justify-content-between post-actions ">
+													  <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+														  <i class="icon-xl my-icon" data-feather="thumbs-up"></i>
+														  <p class="d-none d-md-block ml-2"><span>Like</span><span> | </span><span>1499</span></p>
+													  </a>
+													  <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+														  <i class="icon-xl my-icon" data-feather="message-square"></i>
+														  <p class="d-none d-md-block ml-2"><span>Comment</span><span> | </span><span>233</span></p>
+													  </a>
+													  <a href="javascript:;" class="d-flex align-items-center text-muted">
+														  <i class="icon-xl my-icon" data-feather="share-2"></i>
+														  <p class="d-none d-md-block ml-2"><span>Share</span><span> | </span><span>20</span></p>
+													  </a>
+												  </div>
+											  </div>
+										  </div>
+										  <!--comments-->
+										  <div class="comments-wrapper">
+											<div class=" comments">
+												<div class="card-header border-0 mt-3  ">
+													<!--individual comments-->
+													<div class="d-flex align-items-start mb-5">
+														<div class="dp-div">
+															<img class="img-md rounded-circle" src="assets/images/jdk.jpg" alt="">	
+														</div>
+														<div class="d-flex flex-column align-items-start">										
+															<div class="">
+																<p class="poster">Null Stead</p>
+																<p class="mins">1 min ago</p>
+															</div>
+															<div>
+																<p class="mb-3 comment-text">Hey Guys!!! AGI Community is making waves on the media now. It is unbelievable how this platform has overtaken the likes of Quora, Pinterest, Reddit and other communities. Let’s keep up the energy and build valuable connections. Hurrayyyyyyyyyy.</p>
+															</div>
+															<div>
+																<a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+																	<i class="icon-xl my-icon" data-feather="thumbs-up"></i>
+																	<p class="d-none d-md-block ml-2 likes"><span>Like</span><span>(2)</span></p>
+																	<p class="d-none d-md-block ml-4 reply">Reply</p>
+																</a>
+															</div>
+														</div>													
+													</div>
+													<div class="d-flex align-items-start ">
+														<div class="dp-div">
+															<img class="img-md rounded-circle" src="assets/images/dp.png" alt="">	
+														</div>
+														<div class="d-flex flex-column align-items-start">										
+															<div class="">
+																<p class="poster">Aka Eben</p>
+																<p class="mins">1 min ago</p>
+															</div>
+															<div>
+																<p class="mb-3 comment-text">Hey Guys!!! AGI Community is making waves on the media now. It is unbelievable how this platform has overtaken the likes of Quora, Pinterest, Reddit and other communities. Let’s keep up the energy and build valuable connections. Hurrayyyyyyyyyy.</p>
+															</div>
+															<div>
+																<a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+																	<i class="icon-xl my-icon" data-feather="thumbs-up"></i>
+																	<p class="d-none d-md-block ml-2 likes"><span>Like</span><span>(2)</span></p>
+																	<p class="d-none d-md-block ml-4 reply">Reply</p>
+																</a>
+															</div>
+														</div>													
+													</div>
+
+												</div>
+												<div class="card-body text-center border-0 more" >
+													<p class="more-text">More comments +</p>
+												</div>
+												<div class="card-footer border-0 ">
+													<div class="d-flex align-items-center justify-content-between">
+														<div class="d-flex align-items-center mg">
+															<img class="img-md rounded-circle" src="assets/images/jdk.jpg" alt="">													
+															<div class="ml-4 write w-100">
+																<textarea name="" id="" cols="30" rows="1">Write a Comment</textarea>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										  </div>
+									  </div>
+
+									  <div class="col-md-12 grid-margin newsfeed">
+										<div class="card rounded">
+											<div class="card-header">
+												<div class="d-flex align-items-center justify-content-between">
+													<div class="d-flex align-items-center">
+														<img class="img-xs rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														<div class="ml-2">
+															<p class="poster-name">Null Stead</p>
+															<p class="mins">1 min ago</p>
+														</div>
+													</div>
+													<div class="dropdown">
+														<button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<i class="icon-xxl pb-3px menu-icon" data-feather="more-horizontal"></i>
+														</button>
+														<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+															<a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="meh" class="icon-sm mr-2"></i> <span class="">Unfollow</span></a>
+															<a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="corner-right-up" class="icon-sm mr-2"></i> <span class="">Go to post</span></a>
+															<a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="share-2" class="icon-sm mr-2"></i> <span class="">Share</span></a>
+															<a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="copy" class="icon-sm mr-2"></i> <span class="">Copy link</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-body" >
+												<p class="mb-3 post-text">Hey Guys!!! AGI Community is making waves on the media now. It is unbelievable how this platform has overtaken the likes of Quora, Pinterest, Reddit and other communities. Let’s keep up the energy and build valuable connections. Hurrayyyyyyyyyy.</p>
+												<img class="img-fluid" src="assets/images/feed2.png" alt="">
+											</div>
+											<div class="card-footer ">
+												<div class="d-flex justify-content-between post-actions ">
+													<a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+														<i class="icon-xl my-icon" data-feather="thumbs-up"></i>
+														<p class="d-none d-md-block ml-2"><span>Like</span><span> | </span><span>1499</span></p>
+													</a>
+													<a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+														<i class="icon-xl my-icon" data-feather="message-square"></i>
+														<p class="d-none d-md-block ml-2"><span>Comment</span><span> | </span><span>233</span></p>
+													</a>
+													<a href="javascript:;" class="d-flex align-items-center text-muted">
+														<i class="icon-xl my-icon" data-feather="share-2"></i>
+														<p class="d-none d-md-block ml-2"><span>Share</span><span> | </span><span>20</span></p>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!--comments-->
+										<div class="comments-wrapper">
+										  <div class=" comments">
+											  <div class="card-header border-0 mt-3  ">
+												  <!--individual comments-->
+												  <div class="d-flex align-items-start mb-5">
+													  <div class="dp-div">
+														  <img class="img-md rounded-circle" src="assets/images/jdk.jpg" alt="">	
+													  </div>
+													  <div class="d-flex flex-column align-items-start">										
+														  <div class="">
+															  <p class="poster">Null Stead</p>
+															  <p class="mins">1 min ago</p>
+														  </div>
+														  <div>
+															  <p class="mb-3 comment-text">Hey Guys!!! AGI Community is making waves on the media now. It is unbelievable how this platform has overtaken the likes of Quora, Pinterest, Reddit and other communities. Let’s keep up the energy and build valuable connections. Hurrayyyyyyyyyy.</p>
+														  </div>
+														  <div>
+															  <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+																  <i class="icon-xl my-icon" data-feather="thumbs-up"></i>
+																  <p class="d-none d-md-block ml-2 likes"><span>Like</span><span>(2)</span></p>
+																  <p class="d-none d-md-block ml-4 reply">Reply</p>
+															  </a>
+														  </div>
+													  </div>													
+												  </div>
+												  <div class="d-flex align-items-start ">
+													  <div class="dp-div">
+														  <img class="img-md rounded-circle" src="assets/images/dp.png" alt="">	
+													  </div>
+													  <div class="d-flex flex-column align-items-start">										
+														  <div class="">
+															  <p class="poster">Aka Eben</p>
+															  <p class="mins">1 min ago</p>
+														  </div>
+														  <div>
+															  <p class="mb-3 comment-text">Hey Guys!!! AGI Community is making waves on the media now. It is unbelievable how this platform has overtaken the likes of Quora, Pinterest, Reddit and other communities. Let’s keep up the energy and build valuable connections. Hurrayyyyyyyyyy.</p>
+														  </div>
+														  <div>
+															  <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+																  <i class="icon-xl my-icon" data-feather="thumbs-up"></i>
+																  <p class="d-none d-md-block ml-2 likes"><span>Like</span><span>(2)</span></p>
+																  <p class="d-none d-md-block ml-4 reply">Reply</p>
+															  </a>
+														  </div>
+													  </div>													
+												  </div>
+
+											  </div>
+											  <div class="card-body text-center border-0 more" >
+												  <p class="more-text">More comments +</p>
+											  </div>
+											  <div class="card-footer border-0 ">
+												  <div class="d-flex align-items-center justify-content-between">
+													  <div class="d-flex align-items-center mg">
+														  <img class="img-md rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														  <div class="ml-4 write w-100">
+															  <textarea name="" id="" cols="30" rows="1">Write a Comment</textarea>
+														  </div>
+													  </div>
+												  </div>
+											  </div>
+										  </div>
+										  
+										</div>
+									</div>
+									  
+								  </div>
+							  </div>
+							  <!-- middle wrapper end -->
+							  <!-- right wrapper start -->
+							  <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-2 right-wrapper">
+								  <div class="row">
+									  <div class="col-md-12 grid-margin">
+										  <div class="card rounded people">
+											  <div class="card-body">
+												  <h6 class="">People you may know</h6>
+												  <div class="d-flex justify-content-between mb-2 pb-2  people-group">
+													  <div class="d-flex align-items-center hover-pointer">
+														  <img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														  <div class="ml-2">
+															  <p class="h-text">Mike Popescu</p>
+															  <p class="tx-11 text-muted s-text">10 Members</p>
+														  </div>
+													  </div>
+													  <div class="p-icon " title="message">
+													  </div>
+												  </div>
+												  <div class="d-flex justify-content-between mb-2 pb-2  people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												  </div>
+												  <div class="d-flex justify-content-between mb-2 pb-2 people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2  people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2  people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2  people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2  people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/jdk.jpg" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">10 Members</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+	  
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+							  <!-- right wrapper end -->
+							  <!--far right wrapper start -->
+							  <div class="far-right-wrapper right-wrapper col-xl-2">
+								<div class="row">
+									<div class="col-md-12 grid-margin">
+										<div class="card rounded leaderboard">
+											<div class="card-body">
+												<h6 class="">Leaderboard</h6>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												<div class="d-flex justify-content-between mb-2 pb-2 border-bottom people-group">
+													<div class="d-flex align-items-center hover-pointer">
+														<img class="img-xs rounded-circle" src="assets/images/people1.png" alt="">													
+														<div class="ml-2">
+															<p class="h-text">Mike Popescu</p>
+															<p class="tx-11 text-muted s-text">3243 Points</p>
+														</div>
+													</div>
+													<div class="p-icon " title="message">
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--far right wrapper end -->
+							  
+						  </div>
+			  </div>
+		</div>
+
+	
+
+		
+
 
         
-
         
 
 
@@ -246,7 +872,7 @@
 
 
 
-			</div>
+	</div>
 
 			<!-- Footer-->
 			<!-- <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
@@ -272,6 +898,8 @@
   <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
   <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="assets/vendors/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendors/jquery-mousewheel/jquery.mousewheel.js"></script>
 	<!-- end plugin js for this page -->
 	<!-- inject:js -->
 	<script src="assets/vendors/feather-icons/feather.min.js"></script>
@@ -280,6 +908,7 @@
   <!-- custom js for this page -->
   <script src="assets/js/dashboard.js"></script>
   <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/carousel.js"></script>
 	<!-- end custom js for this page -->
 </body>
 </html>    
